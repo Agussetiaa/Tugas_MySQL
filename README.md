@@ -1,4 +1,4 @@
-# TUGAS BASIS_DATA
+# TUGAS Basis_data MySQL
 ## Latihan 1
 
 
