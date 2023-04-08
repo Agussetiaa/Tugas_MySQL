@@ -6,7 +6,7 @@
 CREATE DATABASE latihan1;
 ```
 #### Output 
-![gambar](gambar latihan/1.png)
+![gambar](gambar latihan1/1.png)
 
 ## 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam
 database latihan1!
