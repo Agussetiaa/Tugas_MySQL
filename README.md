@@ -10,63 +10,63 @@ CREATE DATABASE latihan1;
 
 ## 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam database latihan1!
 ```
-CREATE TABLE siswa (nama VARCHAR(50), alamat VARCHAR(50));
+CREATE TABLE biodata (nama VARCHAR(50), alamat VARCHAR(50));
 ```
 #### Output 
 ![gambar](SSlatihan1/2.png)
 
 ## 3. Tambahkan sebuah kolom keterangan (varchar 15), sebagai kolom terakhir!
 ```
-ALTER TABLE siswa ADD COLUMN keterangan varchar(15) AFTER alamat;
+ALTER TABLE biodata ADD COLUMN keterangan varchar(15) AFTER alamat;
 ```
 #### Output 
 ![gambar](SSlatihan1/3.png)
 
 ## 4. Tambahkan kolom id (int 11) di awal (sebagai kolom pertama)!
 ```
-ALTER TABLE siswa ADD COLUMN id int(11) First;
+ALTER TABLE biodata ADD COLUMN id int(11) First;
 ```
 #### Output 
 ![gambar](SSlatihan1/4.png)
 
 ## 5. Sisipkan sebuah kolom dengan nama phone (varchar 15) setelah kolom alamat!
 ```
-ALTER TABLE siswa ADD COLUMN phone varchar(15) after alamat;
+ALTER TABLE biodata ADD COLUMN phone varchar(15) after alamat;
 ```
 #### Output 
 ![gambar](SSlatihan1/5.png)
 
 ## 6. Ubah tipe data kolom id menjadi char(11)!
 ```
-ALTER TABLE siswa MODIFY COLUMN id VARCHAR(11);
+ALTER TABLE biodata MODIFY COLUMN id VARCHAR(11);
 ```
 #### Output 
 ![gambar](SSlatihan1/6.png)
 
 ## 7. Ubah nama kolom phone menjadi hp (varchar 20)!
 ```
-ALTER TABLE siswa CHANGE COLUMN phone hp varchar(20);
+ALTER TABLE biodata CHANGE COLUMN phone hp varchar(20);
 ```
 #### Output 
 ![gambar]SSlatihan1/7.png)
 
 ## 8. Tambahkan kolom email setelah kolom hp
 ```
-ALTER TABLE siswa ADD COLUMN email text after hp;
+ALTER TABLE biodata ADD COLUMN email text after hp;
 ```
 #### Output 
 ![gambar]SSlatihan1/8.png)
 
 ## 9. Hapus kolom keterangan dari tabel!
 ```
-alter table siswa drop keterangan;
+alter table biodata drop keterangan;
 ```
 #### Output 
 ![gambar](SSlatihan1/9.png)
 
 ## 10. Ganti nama tabel menjadi data_mahasiswa!
 ```
-alter table siswa rename data_mahasiswa;
+alter table biodata rename data_mahasiswa;
 ```
 #### Output 
 ![gambar](SSlatihan1/10.png)
