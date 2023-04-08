@@ -10,7 +10,7 @@ CREATE DATABASE latihan1;
 
 ## 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam database latihan1!
 ```
-CREATE TABLE siswa (nama VARCHAR(50), alamat VARCHAR(50);
+CREATE TABLE siswa (nama VARCHAR(50), alamat VARCHAR(50));
 ```
 #### Output 
 ![gambar](SSlatihan1/2.png)
