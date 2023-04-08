@@ -11,7 +11,7 @@ CREATE DATABASE latihan1;
 ## 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam
 database latihan1!
 ```
-CREATE TABLE siswa (nama VARCHAR(100), alamat TEXT);
+CREATE TABLE siswa (nama VARCHAR(50), alamat VARCHAR(50);
 ```
 #### Output 
 ![gambar](SSlatihan1/2.png)
@@ -93,7 +93,7 @@ ALTER TABLE data_mahasiswa ADD PRIMARY KEY(nim);
 ALTER TABLE data_mahasiswa ADD CONSTRAINT email unique KEY(email);
 ```
 #### Output 
-![gambar]SSlatihan1/13.png)
+![gambar](SSlatihan1/13.png)
 
 ## 14. Hasil akhir
 
