@@ -6,72 +6,95 @@
 CREATE DATABASE latihan1;
 ```
 #### Output 
-![gambar](gambar/1.png)
+![gambar](gambar latihan/1.png)
 
 ## 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam
 database latihan1!
 ```
 CREATE TABLE siswa (nama VARCHAR(100), alamat TEXT);
 ```
+#### Output 
+![gambar](gambar latihan/1.png)
+
 ## 3. Tambahkan sebuah kolom keterangan (varchar 15), sebagai kolom
 terakhir!
 ```
 ALTER TABLE siswa ADD COLUMN keterangan varchar(15) AFTER alamat;
 ```
+#### Output 
+![gambar](gambar latihan/1.png)
 
 ## 4. Tambahkan kolom id (int 11) di awal (sebagai kolom pertama)!
 ```
 ALTER TABLE siswa ADD COLUMN id int(11) First;
 ```
+#### Output 
+![gambar](gambar latihan/1.png)
 
 ## 5. Sisipkan sebuah kolom dengan nama phone (varchar 15) setelah
 kolom alamat!
 ```
 ALTER TABLE siswa ADD COLUMN phone varchar(15) after alamat;
 ```
-
+#### Output 
+![gambar](gambar latihan/1.png)
 
 ## 6. Ubah tipe data kolom id menjadi char(11)!
 ```
 ALTER TABLE siswa MODIFY COLUMN id VARCHAR(11);
 ```
+#### Output 
+![gambar](gambar latihan/1.png)
 
 ## 7. Ubah nama kolom phone menjadi hp (varchar 20)!
 ```
 ALTER TABLE siswa CHANGE COLUMN phone hp varchar(20);
 ```
+#### Output 
+![gambar](gambar latihan/1.png)
 
 ## 8. Tambahkan kolom email setelah kolom hp
 ```
 ALTER TABLE siswa ADD COLUMN email text after hp;
 ```
+#### Output 
+![gambar](gambar latihan/1.png)
 
 ## 9. Hapus kolom keterangan dari tabel!
 ```
 alter table siswa drop keterangan;
 ```
+#### Output 
+![gambar](gambar latihan/1.png)
 
 ## 10. Ganti nama tabel menjadi data_mahasiswa!
 ```
 alter table siswa rename data_mahasiswa;
 ```
-
+#### Output 
+![gambar](gambar latihan/1.png)
 
 ## 11. Ganti nama field id menjadi nim!
 ```
 ALTER TABLE data_mahasiswa CHANGE COLUMN id nim varchar(11);
 ```
+#### Output 
+![gambar](gambar latihan/1.png)
 
 ## 12. Jadikan nim sebagai PRIMARY KEY!
 ```
 ALTER TABLE data_mahasiswa ADD PRIMARY KEY(nim);
 ```
-
+#### Output 
+![gambar](gambar latihan/1.png)
 
 ## 13. Jadikan kolom email sebagai UNIQUE KEY
 ```
 ALTER TABLE data_mahasiswa ADD CONSTRAINT email unique KEY(email);
 ```
+#### Output 
+![gambar](gambar latihan/1.png)
+
 ## 14. Hasil akhir
 
 
