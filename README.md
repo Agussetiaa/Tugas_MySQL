@@ -24,56 +24,56 @@ ALTER TABLE biodata ADD COLUMN keterangan varchar(15);
 
 ## 4. Tambahkan kolom id (int 11) di awal (sebagai kolom pertama)!
 ```
-ALTER TABLE biodata ADD COLUMN id int(11) First;
+ALTER TABLE biodata ADD COLUMN id INT First;
 ```
 #### Output 
 ![gambar](SSlatihan1/4.png)
 
 ## 5. Sisipkan sebuah kolom dengan nama phone (varchar 15) setelah kolom alamat!
 ```
-ALTER TABLE biodata ADD COLUMN phone varchar(15);
+ALTER TABLE biodata ADD phone varchar(15) AFTER alamat;
 ```
 #### Output 
 ![gambar](SSlatihan1/5.png)
 
 ## 6. Ubah tipe data kolom id menjadi char(11)!
 ```
-ALTER TABLE biodata MODIFY COLUMN id VARCHAR(11);
+ALTER TABLE biodata MODIFY COLUMN id CHAR(11);
 ```
 #### Output 
 ![gambar](SSlatihan1/6.png)
 
 ## 7. Ubah nama kolom phone menjadi hp (varchar 20)!
 ```
-ALTER TABLE biodata CHANGE COLUMN phone hp varchar(20);
+ALTER TABLE biodata CHANGE phone hp varchar(20);
 ```
 #### Output 
-![gambar]SSlatihan1/7.png)
+![gambar](SSlatihan1/7.png)
 
 ## 8. Tambahkan kolom email setelah kolom hp
 ```
-ALTER TABLE biodata ADD COLUMN email text after hp;
+ALTER TABLE biodata ADD email VARCHAR(15) after hp;
 ```
 #### Output 
-![gambar]SSlatihan1/8.png)
+![gambar](SSlatihan1/8.png)
 
 ## 9. Hapus kolom keterangan dari tabel!
 ```
-alter table biodata drop keterangan;
+ALTER TABLE biodata drop keterangan;
 ```
 #### Output 
 ![gambar](SSlatihan1/9.png)
 
 ## 10. Ganti nama tabel menjadi data_mahasiswa!
 ```
-alter table biodata rename data_mahasiswa;
+ALTER TABLE biodata rename data_mahasiswa;
 ```
 #### Output 
 ![gambar](SSlatihan1/10.png)
 
 ## 11. Ganti nama field id menjadi nim!
 ```
-ALTER TABLE data_mahasiswa CHANGE COLUMN id nim varchar(11);
+ALTER TABLE data_mahasiswa CHANGE id nim char(11);
 ```
 #### Output 
 ![gambar](SSlatihan1/11.png)
@@ -87,7 +87,7 @@ ALTER TABLE data_mahasiswa ADD PRIMARY KEY(nim);
 
 ## 13. Jadikan kolom email sebagai UNIQUE KEY
 ```
-ALTER TABLE data_mahasiswa ADD CONSTRAINT email unique KEY(email);
+ALTER TABLE data_mahasiswa ADD UNIQUE KEY(email);
 ```
 #### Output 
 ![gambar](SSlatihan1/13.png)
