@@ -17,7 +17,7 @@ CREATE TABLE biodata (nama VARCHAR(50), alamat VARCHAR(50));
 
 ## 3. Tambahkan sebuah kolom keterangan (varchar 15), sebagai kolom terakhir!
 ```
-ALTER TABLE biodata ADD COLUMN keterangan varchar(15) AFTER alamat;
+ALTER TABLE biodata ADD COLUMN keterangan varchar(15);
 ```
 #### Output 
 ![gambar](SSlatihan1/3.png)
