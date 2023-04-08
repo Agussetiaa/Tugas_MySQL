@@ -8,16 +8,14 @@ CREATE DATABASE latihan1;
 #### Output 
 ![gambar](SSlatihan1/1.png)
 
-## 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam
-database latihan1!
+## 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam database latihan1!
 ```
 CREATE TABLE siswa (nama VARCHAR(50), alamat VARCHAR(50);
 ```
 #### Output 
 ![gambar](SSlatihan1/2.png)
 
-## 3. Tambahkan sebuah kolom keterangan (varchar 15), sebagai kolom
-terakhir!
+## 3. Tambahkan sebuah kolom keterangan (varchar 15), sebagai kolom terakhir!
 ```
 ALTER TABLE siswa ADD COLUMN keterangan varchar(15) AFTER alamat;
 ```
@@ -31,8 +29,7 @@ ALTER TABLE siswa ADD COLUMN id int(11) First;
 #### Output 
 ![gambar](SSlatihan1/4.png)
 
-## 5. Sisipkan sebuah kolom dengan nama phone (varchar 15) setelah
-kolom alamat!
+## 5. Sisipkan sebuah kolom dengan nama phone (varchar 15) setelah kolom alamat!
 ```
 ALTER TABLE siswa ADD COLUMN phone varchar(15) after alamat;
 ```
@@ -94,8 +91,6 @@ ALTER TABLE data_mahasiswa ADD CONSTRAINT email unique KEY(email);
 ```
 #### Output 
 ![gambar](SSlatihan1/13.png)
-
-## 14. Hasil akhir
 
 
 
