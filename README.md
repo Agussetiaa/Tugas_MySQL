@@ -31,7 +31,7 @@ ALTER TABLE biodata ADD COLUMN id int(11) First;
 
 ## 5. Sisipkan sebuah kolom dengan nama phone (varchar 15) setelah kolom alamat!
 ```
-ALTER TABLE biodata ADD COLUMN phone varchar(15) after alamat;
+ALTER TABLE biodata ADD COLUMN phone varchar(15);
 ```
 #### Output 
 ![gambar](SSlatihan1/5.png)
